@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/nauphone/ReverseExtension.git', :tag => '0.6.0' }
   s.social_media_url = 'https://twitter.com/marty_suzuki'
   s.ios.deployment_target = '8.0'
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES"}
 
   s.source_files = 'ReverseExtension/*.{swift,h,m}'
 
