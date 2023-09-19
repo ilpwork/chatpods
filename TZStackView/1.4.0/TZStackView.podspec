@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.deployment_target = "8.0"
-  s.source   = { :git => "https://github.com/nauphone/TZStackView.git", :modular_headers => true, :tag => "1.4.0"}
+  s.source   = { :git => "https://github.com/nauphone/TZStackView.git", :tag => "1.4.0"}
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES"}
   s.source_files = "TZStackView/*.swift"
 end
