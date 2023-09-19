@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '4.2'
 
-  s.source   = { :git => 'https://github.com/nauphone/WKWebViewRTC.git', :modular_headers => true, :tag => '0.5.1'}
+  s.source   = { :git => 'https://github.com/nauphone/WKWebViewRTC.git', :tag => '0.5.1'}
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES"}
   s.source_files = 'WKWebViewRTC/Classes/**/*'
   s.resources = 'WKWebViewRTC/Js/jsWKWebViewRTC.js'
 
